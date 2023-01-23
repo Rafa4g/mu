@@ -171,12 +171,12 @@ msg -bar
 # [[ -z $keybot ]] && {
 # [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
 # [[ $link = 'https://raw.githubusercontent.com' ]] && echo "CONTROL MEDIANTE GitHub" || echo "CONTROL EXTERNO"
-# permited=$(curl -sSL "${link}/NetVPS/Bot-Gen-MultiScript/main/Control-IP") 
+# permited=$(curl -sSL "${link}/Rafa4g/mu/main/Control-IP") 
 # } || {
-# permited=$(curl -sSL "$(ofus $keybot)/NetVPS/Bot-Gen-MultiScript/main/Control-IP")
+# permited=$(curl -sSL "$(ofus $keybot)/Rafa4g/mu/main/Control-IP")
 # [[ -z $keybot ]] && echo $link > /bin/downloadbot  || echo -e "$(ofus $keybot)" > /bin/downloadbot 
 # }
-permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Bot-Gen-MultiScript/main/Control-IP") 
+permited=$(curl -sSL "https://raw.githubusercontent.com/Rafa4g/mu/main/Control-IP") 
  [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n"
@@ -415,7 +415,7 @@ atualiza_fun
 IVAR2="/etc/key-gerador"
 echo "$Key" > $IVAR2
 rm $HOME/lista-arq
-wget --no-check-certificate -O /etc/SCRIPT/gerar.sh -q https://www.dropbox.com/s/25g993sfwayphr8/menu-gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
+wget --no-check-certificate -O /etc/SCRIPT/gerar.sh -q raw.githubusercontent.com/Rafa4g/mu/main/ChumoGH/Files-BOT.Open/SCRIPT/gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
 echo 'cd /etc/SCRIPT && ./gerar.sh' > /usr/bin/gerar
 echo 'source <(curl -sSL https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/back/free-men.sh)' > /bin/ejecutar/echo-ram.sh
 echo 'wget -q -O /bin/ejecutar/v-new.log https://www.dropbox.com/s/8tizr516cvkwss6/v-new.log?dl=0' >> /bin/ejecutar/echo-ram.sh && bash /bin/ejecutar/echo-ram.sh
