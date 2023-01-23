@@ -478,7 +478,7 @@ fix_key() {
   echo -e "$BARRA"
   echo -e " 🛡️  𝙸𝚗𝚜𝚝𝚊𝚕𝚊𝚍𝚘𝚛  𝙾𝚏𝚒𝚌𝚒𝚊𝚕   🛡️"
   #echo -e "$BARRA"
-  msg -bar && echo -ne "$(msg -verd "apt update -y &&") $(msg -aqua "apt upgrade -y;\n") " && msg -bra "\033[7;49;35m wget -q https://raw.githubusercontent.com/ChumoGH/ScriptCGH/main/setup; chmod 777 setup; ./setup"
+  msg -bar && echo -ne "$(msg -verd "apt update -y &&") $(msg -aqua "apt upgrade -y;\n") " && msg -bra "\033[7;49;35m wget -q https://raw.githubusercontent.com/Rafa4g/mu/main/ChumoGH/setup; chmod 777 setup; ./setup"
   msg -bar
   #echo -e " 🛡️  𝙸𝚗𝚜𝚝𝚊𝚕𝚊𝚍𝚘𝚛  𝙾𝚏𝚒𝚌𝚒𝚊𝚕  ARM 🛡️"
   #msg -bar && echo -ne "$(msg -verd "apt update -y &&") $(msg -aqua "apt upgrade -y;\n") "&& msg -bra "\033[7;49;35m wget -q https://www.dropbox.com/s/y9ew98frrwnq1h5/instala.sh; chmod +x instala.sh;./instala.sh"
