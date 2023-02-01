@@ -41,7 +41,7 @@ check_ip(){
 }
 
 function_verify () {
-  permited=$(curl -sSL "https://www.dropbox.com/s/ghb1m6k07ppt28v/Control-Bot")
+  permited=$(curl -sSL "https://raw.githubusercontent.com/Rafa4g/telebot/main/TeleBotGen/Control/Control-Bot")
   if [[ $(echo $permited|grep -w "$IP") = "" ]]; then
   	clear
   	msg -bar
